@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: green;
+}
+
+body{
+    background-color: rgb(254, 246, 235);
+}
+
+table{
+    margin-top: 5vh;
+    padding: 3vh;
+    border: 1px solid green;
+    border-radius: 3em;
+}
+
+th{
+    font-size: 1.3em;
+    background-color: #d1e6dd;
+    border-bottom: 1px solid green;
+    padding: .5em;
+}
+
+td{
+    padding: .5em;
+}
+
+.warnMsg{
+    text-align: center;
+    font-weight: 500;
+}
+
+/* ======PROFIL====== */
+#patientProfileSection{
+    margin-top: 10vh;
+}
+
+#patientName{
+    padding: 1vw;
+    top: 8vh;
+    left: 40vw;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(254, 246, 235);
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.profContainer{
+    padding: 10vh;
+    position: relative;
+    margin: 10vh;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid green;
+    border-radius: 30px;
+}
+
+.profImg{
+    /* height: 60%; */
+    width: 40%;
+    object-fit: contain;
+}
+
+.profData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.patientId{
+    margin-top: 2vh;
+    font-size: .8em;
+}
+/*------------------------------------ MODIFIERS */
+.modifiers{
+    display: flex;
+    height: 2vh;
+}
+
+.modifiers i{
+    color: black;
+    margin-right: 1vw;
+    width: 1vw;
+    font-size: 1.4em;
+}
+.modifiers i:hover{
+    cursor: pointer;
+    color: rgb(87, 154, 87);
+    /* font-size: 1.5em; */
+    transition: .3s ease-in-out;
+}
+
+/* UPDATE */
+.hidden{
+    display: none;
+}
+
+#searchDiv{
+    display: flex;
+}
+
+/* Boutons de pagination */
+#pageNav{
+    font-weight: 600;
+    gap: 2vw;
+}

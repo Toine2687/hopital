@@ -67,18 +67,7 @@ try {
             $error['dateHour'] = 'Date et/ou horaire incohérents';
         } else if (in_array($time, MINUTESRANGE)) {
             $dateHour = date('Y-m-d H:i:s');
-        }
-
-        // ====ID===
-        // $id = (filter_input(INPUT_POST, "idPatient",  FILTER_SANITIZE_NUMBER_INT));
-        // if (empty($id)) {
-        //     $error['id'] = 'Précisez l\'identité du patient';
-        // } else {
-        //     $isExist = Patient::get($id);
-        //     if (!$isExist) {
-        //         $error['id'] = 'Identité du patient incohérente';
-        //     }
-        // }
+        } 
 
         // --------------------------Execution-----------------------------
 
@@ -92,7 +81,7 @@ try {
                     $patient = new Patient($lastname, $firstname, $birthDate, $mail, $phone);
                     $isAdded = $patient->add();
                 }
-
+                
                 $id = $db->lastInsertId();
 
                 $appointment = new Appointment($dateHour, $id);
